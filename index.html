@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe || dbf</title>
+    <link rel="stylesheet" href="style.css">
+   
+<link rel="icon" href="logo.png">
+
+</head>
+<body>
+<center><h1>Tic-Tac-toe</h1></center>
+<div class="form">
+<button class="start" >Start Game</button>
+<button class="games" onclick="callStorage()">Last Games</button>
+<button class="setting">Settings</button>
+</div>
+
+
+<div class="settingsScreen">
+    <div class="namea"><p class="back set"><</p><h1>Settings</h1></div>
+    <hr class="hr">
+    <div  class="volumeBox">
+        <p class="settingP">Music Volume</p>
+        <input class="range" type="range" value="0" onpointermove="lol()" onpointerdown="audio1.play()">
+    </div>
+    <div  class="volumeBox">
+      <p class="settingP">Sound Effects</p>
+      <input class="range2" type="range" value="40" onpointermove="sdn()">
+  </div>
+  <DIV class="selectMusic">
+    <p>Music:</p>
+    <select class="slc">
+    <option value="1">None  </option>
+      <option value="2">I wanna be your slave</option>
+      <option value="3">Mc Soundtrack</option>
+      <option value="4">Up</option>
+    </select>
+  </DIV>
+    <div class="colorBox">
+        <p class="settingP">Color Themes</p>
+        <div class="allThemes">
+            <div class="currentTheme"></div>
+            <div class="otherThemes">
+              <div class="redTheme"></div>
+              <div class="greenTheme"></div>
+              <div class="flatBlueTheme"></div>
+              <div class="normalTheme"></div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div class="lastGamesScreen">
+  <div class="namea"><p class="back lback"><</p><h1 >Last Games</h1></div>
+  <hr class="hr">
+  <p class="lolas"></p>
+  <div class="list">
+
+   
+  
+  
+   
+   
+
+  </div>
+</div>
+
+
+<div class="nameSelector" >
+  <div class="namea"><p class="back backName"><</p><h1>Type Names</h1></div>
+  <form class="nameForm" autocomplete="off">
+    <label for="playerFirst" class="label1" id="label1">Player 1</label>
+    <input type="text" class="name" id="playerFirst" name="player1" minlength = "1" maxlenght="10"required>
+    <label for="playerSecond" class="label2" id="label2">Player 2</label>
+    <input type="text" class="name" id="playerSecond" name="player2"maxlenght="10"  minlength
+    ="1" required>
+    <button type="button" class="submit" id="submit">
+      Next
+    </button>
+
+    </c>
+  </form></div>
+
+  <div class="gameScreen">
+
+
+    <div class="statusBar">
+        <div class="player1">
+<div class="playerName" id="xName">
+Firuz
+
+</div>
+<div class="player1Score">
+  4
+</div>
+        </div>
+        <p class="vsvs">Vs</p>
+        <div class="player2">
+          
+          <div class="playerName" id="circleName">
+            Alim
+
+          </div>
+
+          <div class="player2Score">
+            3
+          </div>
+        </div>
+    </div>
+    <div class="gameTable">
+     <div class="table" id="table">
+      <div class="box top left ye" id="box" data-cell></div>
+      <div class="box top ye" id="box"data-cell></div>
+      <div class="box top right" id="box"data-cell></div>
+      <div class="box top left ye" id="box" data-cell></div>
+      <div class="box top ye" id="box" data-cell></div>
+      <div class="box top right" id="box" data-cell></div>
+      <div class="box top left btm ye" id="box" data-cell></div>
+      <div class="box top btm ye" id="box" data-cell></div>
+      <div class="box top right btm" id="box" data-cell></div>
+     </div>
+
+    </div>
+    
+    <div class="turnSection">
+      Firuz's Turn
+
+    </div>
+
+
+  </div>
+  
+  
+<div class="blur"></div>
+   <div class="blur2" id="blur2"></div>
+  <p class="copy">
+    © 2021 dbf Inc;
+  </p>
+  
+   <div class="winnerbox" id="winnerbox">
+    <p class="check"></p>
+    
+    <div class="sword"></div>
+    <button class="retry asa" id="retry" onclick="yehboy()">Next Match</button>
+    <button class="homepage asa" id="homepage" onclick="location.reload()">Home Page</button>
+        </div>
+        <script src="./js/script.js"></script>
+  <script type="text/javascript">
+    var isphone = navigator.userAgent.toLowerCase().indexOf("android") > -1; //&& ua.indexOf("mobile");
+    if(isphone) {
+        document.write('<meta name="viewport" content="width=device-width,height='+window.innerHeight+', initial-scale=1.0">');
+    }
+    </script>
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+     crossorigin="anonymous"
+   ></script>
+   <script src="./js/animation.js"></script>
+   <script src="./js/game.js"></script>
+   <script src="./js/music.js"></script>
+</body>
+
+</html>
